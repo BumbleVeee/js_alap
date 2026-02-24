@@ -26,11 +26,24 @@ export function eredmenySzamolas(inputElem, eredmenyElem) {
     eredmenyElem.innerHTML=szoveg
 }
 
-function fv2() {
+// 2. feladat - random
+export function veletlenLista() {
+    let lista = [];
+    for (let i = 0; i < 12; i++) {
+        let vszam = Math.floor(Math.random() * 111-10);
+        lista.push(vszam);
+    }
+    return lista;
+}
 
-    let lista = {}
-    for (let index = 0; index < 12; index++) {
-        let vszam=Math.floor(Math.random()*111-10)
-        lista += vszam
+//2 . feladat 
+export function listaKiir(lista, asideElem) {
+    asideElem.innerHTML = "";
+
+    for (let i = 0; i < lista.length; i++) {
+        let div = document.createElement("div");
+        div.classList.add("kor");
+        div.textContent = lista[i];
+        asideElem.appendChild(div);
     }
 }
