@@ -47,3 +47,14 @@ export function listaKiir(lista, asideElem) {
         asideElem.appendChild(div);
     }
 }
+
+//3. feladat
+export function tablazat(lista, articleElem) {
+    let tabla = "<table>";
+    for (let i = 0; i < lista.length; i++) {
+        tabla += "<tr><td>" + lista[i].nev + "</td><td>" + lista[i].atlag + "</td></tr>";
+    }
+    tabla += "</table>";
+
+    articleElem.innerHTML = tabla;
+}

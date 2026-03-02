@@ -1,0 +1,28 @@
+*{
+    box-sizing: border-box;
+}
+
+.kor{
+    border: 2px solid rgb(202, 112, 202);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    background-color: thistle;
+}
+
+#tablazat{
+    border: 2px solid rgb(202, 112, 202);
+    width: 200px;
+    background-color: thistle;
+    display: flex;
+    flex-direction: column;
+}
+
+#tablazat td{
+    border: 2px solid rgb(202, 112, 202);
+    padding: 5px;
+}
